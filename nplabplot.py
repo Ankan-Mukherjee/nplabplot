@@ -33,10 +33,10 @@ class LineDrawerApp(QMainWindow):
 
         # Style Mappings
         self.color_map = {
-            'Blue': 'b',
             'Black': 'k',
             'Red': 'r',
             'Green': 'g',
+            'Blue': 'b'
         }
         
         self.style_map = {
@@ -85,9 +85,9 @@ class LineDrawerApp(QMainWindow):
         self.style_dropdown.addItems(self.style_options)
 
         # NEW: 2. Save Image Button
-        self.save_btn = QPushButton("Save Image")
-        self.save_btn.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
-        self.save_btn.clicked.connect(self.save_image)
+        # self.save_btn = QPushButton("Save Image")
+        # self.save_btn.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        # self.save_btn.clicked.connect(self.save_image)
 
         # Set sizing policies
         for dropdown in [self.x_dropdown, self.y_dropdown, self.z_dropdown, self.color_dropdown, self.style_dropdown]:
@@ -125,7 +125,7 @@ class LineDrawerApp(QMainWindow):
         control_row_layout.addWidget(self.style_dropdown, 2)
         
         # NEW: Inject Save Button onto the far right side of the row layout
-        control_row_layout.addWidget(self.save_btn, 2)
+        # control_row_layout.addWidget(self.save_btn, 2)
         
         # Folder Status Label (Now sits cleanly underneath the ENTIRE row)
         self.folder_label = QLabel("No folder loaded")
@@ -144,7 +144,7 @@ class LineDrawerApp(QMainWindow):
         self.color_dropdown.setVisible(False)
         self.style_label.setVisible(False)
         self.style_dropdown.setVisible(False)
-        self.save_btn.setVisible(False) 
+        # self.save_btn.setVisible(False) 
         
         # Track dataset type (2D or 1D)
         self.is_2d = False
@@ -169,6 +169,14 @@ class LineDrawerApp(QMainWindow):
         self.hist.setImageItem(self.img)
         self.hist.gradient.setColorMap(pg.colormap.get('viridis'))
         self.win.addItem(self.hist, row=0, col=1)
+
+        # Log scale
+        self.log_mode = False
+        self.log_action = QtGui.QAction("Log scale", self.hist)
+        self.log_action.setCheckable(True)
+        self.log_action.triggered.connect(self.set_log_mode)
+        self.hist.vb.menu.addSeparator()
+        self.hist.vb.menu.addAction(self.log_action)
         
         # Start with visuals hidden
         self.img.setVisible(False)
@@ -205,35 +213,6 @@ class LineDrawerApp(QMainWindow):
         folder_path = QFileDialog.getExistingDirectory(self, "Select Folder")
         if folder_path:  
             self.load_dataset(folder_path)
-
-    def save_image(self):
-        """Assembles a descriptive, structured default filename and opens a save dialog box."""
-        if not self.loaded_folder_path:
-            return
-
-        folder_name = os.path.basename(self.loaded_folder_path)
-        x_val = self.x_dropdown.currentText()
-        y_val = self.y_dropdown.currentText()
-        
-        if self.is_2d:
-            z_val = self.z_dropdown.currentText()
-            default_name = f"{folder_name}_X_{x_val}_Y_{y_val}_Z_{z_val}.png"
-        else:
-            default_name = f"{folder_name}_X_{x_val}_Y_{y_val}.png"
-
-        # Sanitize filename string
-        default_name = "".join(c for c in default_name if c.isalnum() or c in (' ', '_', '-', '.'))
-        default_full_path = os.path.join(self.loaded_folder_path, default_name)
-
-        options = QFileDialog.Options()
-        file_path, _ = QFileDialog.getSaveFileName(
-            self, "Save Plot Layout Image", default_full_path,
-            "PNG Image (*.png);;JPEG Image (*.jpg);;All Files (*)", options=options
-        )
-
-        if file_path:
-            exporter = pg.exporters.ImageExporter(self.win.scene())
-            exporter.export(file_path)
 
     def get_axis_label(self, key):
         """Helper to safely extract qcodes labels and units for pyqtgraph display"""
@@ -295,7 +274,7 @@ class LineDrawerApp(QMainWindow):
         self.y_dropdown.addItems(data_list)
         self.z_dropdown.addItems(data_list)
 
-        self.save_btn.setVisible(True)
+        # self.save_btn.setVisible(True)
 
         if self.is_2d:
             self.z_label.setVisible(True)
@@ -402,6 +381,12 @@ class LineDrawerApp(QMainWindow):
             # This captures whether your sweep goes backward or forward!
             dx = (valid_x[-1] - valid_x[0]) / (len(valid_x) - 1)
             dy = (valid_y[-1] - valid_y[0]) / (len(valid_y) - 1)
+
+            if self.log_mode:
+                Zdisp = np.sign(self.Z) * np.log10(np.abs(self.Z))
+            else:
+                Zdisp = self.Z
+            self.img.setImage(Zdisp, autoLevels=False)
             
             # 3. Use QTransform to scale and map pixel grid to spatial axes.
             # We offset by -0.5 * step so coordinates target pixel centers, 
@@ -409,9 +394,10 @@ class LineDrawerApp(QMainWindow):
             transform = QtGui.QTransform()
             transform.translate(valid_x[0] - 0.5 * dx, valid_y[0] - 0.5 * dy)
             transform.scale(dx, dy)
-            
+
+
             # Load data cleanly into ImageItem
-            self.img.setImage(self.Z, autoLevels=False)
+            self.img.setImage(Zdisp, autoLevels=False)
             self.img.setTransform(transform)
             
             # 4. Correctly fit your PlotWidget view boundaries 
@@ -419,7 +405,7 @@ class LineDrawerApp(QMainWindow):
             self.plot.setYRange(np.nanmin(valid_y), np.nanmax(valid_y), padding=0.04)
             
             # Update histogram intensities
-            p5, p95 = np.nanpercentile(self.Z, [5, 95])
+            p5, p95 = np.nanpercentile(Zdisp, [5, 95])
             if p5 == p95: p5 -= 0.1; p95 += 0.1
             self.hist.setLevels(p5, p95)
             
@@ -446,6 +432,10 @@ class LineDrawerApp(QMainWindow):
             self.line.setData(clean_x, clean_y)
             self.plot.setXRange(np.nanmin(clean_x), np.nanmax(clean_x), padding=0.04)
             self.plot.setYRange(np.nanmin(clean_y), np.nanmax(clean_y), padding=0.04)
+
+    def set_log_mode(self, checked):
+        self.log_mode = checked
+        self.update_plot()
     
     
     # UI Interaction Events mapped to runtime syncing
