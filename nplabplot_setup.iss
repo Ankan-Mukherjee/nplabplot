@@ -3,7 +3,7 @@
 ; Non-commercial use only
 
 #define MyAppName "nplabplot"
-#define MyAppVersion "1.7"
+#define MyAppVersion "2.0"
 #define MyAppPublisher "NPLab, Caltech"
 #define MyAppExeName "nplabplot.exe"
 ; --- ICON DEFINITION ---
