@@ -2,6 +2,13 @@ This app uses qcodes_loop as backend.
 
 Developed by Ankan Mukherjee for Nadj-Perge Lab at Caltech.
 
+######
+<h2>v2.0 (2026/06/16)</h2>
+<ul>
+<li>Added tabs to load multiple sets of data in the same app window.</li>
+<li>Added copy to clipboard function on right click that allows copying current plot into the keyboard.</li>
+<li>Removed log plots. New updates will encompass larger sets of data and axes transformations.</li>
+</ul>
 
 ######
 

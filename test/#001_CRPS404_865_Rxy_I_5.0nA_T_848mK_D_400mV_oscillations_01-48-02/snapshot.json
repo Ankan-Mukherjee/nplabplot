@@ -1,0 +1,3767 @@
+{
+    "station": {
+        "instruments": {
+            "triton": {
+                "functions": {},
+                "submodules": {},
+                "parameters": {
+                    "IDN": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_IDN",
+                        "value": {
+                            "vendor": "OXFORD INSTRUMENTS",
+                            "model": "Triton",
+                            "serial": "N/A",
+                            "firmware": "2.449"
+                        },
+                        "raw_value": {
+                            "vendor": "OXFORD INSTRUMENTS",
+                            "model": "Triton",
+                            "serial": "N/A",
+                            "firmware": "2.449"
+                        },
+                        "ts": "2026-05-08 15:07:43",
+                        "vals": "<Anything>",
+                        "name": "IDN",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Anything>"
+                        ],
+                        "label": "IDN"
+                    },
+                    "time": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_time",
+                        "value": "15:17:21",
+                        "raw_value": "STAT:SYS:TIME:15:17:21",
+                        "ts": "2026-05-08 15:07:43",
+                        "name": "time",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "System Time"
+                    },
+                    "action": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_action",
+                        "value": "Circulating",
+                        "raw_value": "STAT:SYS:DR:ACTN:NONE",
+                        "ts": "2026-05-08 15:07:43",
+                        "name": "action",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "Current action"
+                    },
+                    "status": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_status",
+                        "value": "OK",
+                        "raw_value": "STAT:SYS:DR:STATUS:OK",
+                        "ts": "2026-05-08 15:07:43",
+                        "name": "status",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "Status"
+                    },
+                    "pid_control_channel": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_pid_control_channel",
+                        "value": 8,
+                        "raw_value": 8,
+                        "ts": "2026-05-08 15:07:43",
+                        "vals": "<Ints 1<=v<=16>",
+                        "name": "pid_control_channel",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Ints 1<=v<=16>"
+                        ],
+                        "label": "PID control channel"
+                    },
+                    "pid_mode": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_pid_mode",
+                        "value": 1,
+                        "raw_value": "ON",
+                        "ts": "2026-05-12 16:27:05",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "pid_mode",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "PID Mode"
+                    },
+                    "pid_ramp": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_pid_ramp",
+                        "value": 0,
+                        "raw_value": "OFF",
+                        "ts": "2026-05-08 15:07:43",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "pid_ramp",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "PID ramp enabled"
+                    },
+                    "pid_setpoint": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_pid_setpoint",
+                        "value": 1.5,
+                        "raw_value": 1.5,
+                        "ts": "2026-05-12 16:27:16",
+                        "name": "pid_setpoint",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "PID temperature setpoint"
+                    },
+                    "pid_rate": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_pid_rate",
+                        "value": 0.0,
+                        "raw_value": 0.0,
+                        "ts": "2026-05-08 15:07:43",
+                        "name": "pid_rate",
+                        "inter_delay": 0,
+                        "unit": "K/min",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "PID ramp rate"
+                    },
+                    "pid_range": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_pid_range",
+                        "value": 3.16,
+                        "raw_value": 3.16,
+                        "ts": "2026-05-12 16:27:00",
+                        "vals": "<Enum: {0.316, 1, 3.16, 100, 10, 31.6}>",
+                        "name": "pid_range",
+                        "inter_delay": 0,
+                        "unit": "mA",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0.316, 1, 3.16, 100, 10, 31.6}>"
+                        ],
+                        "label": "PID heater range"
+                    },
+                    "magnet_status": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_magnet_status",
+                        "value": "IDLE",
+                        "raw_value": "IDLE",
+                        "ts": "2026-05-14 00:56:03",
+                        "name": "magnet_status",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "Magnet status"
+                    },
+                    "magnet_sweeprate": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_magnet_sweeprate",
+                        "value": 0.1,
+                        "raw_value": 0.1,
+                        "ts": "2026-05-14 00:45:42",
+                        "name": "magnet_sweeprate",
+                        "inter_delay": 0,
+                        "unit": "T/min",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "Magnet sweep rate"
+                    },
+                    "magnet_sweeprate_insta": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_magnet_sweeprate_insta",
+                        "value": [
+                            0.00017,
+                            0.00016,
+                            0.1
+                        ],
+                        "raw_value": [
+                            0.00017,
+                            0.00016,
+                            0.1
+                        ],
+                        "ts": "2026-05-08 15:07:43",
+                        "name": "magnet_sweeprate_insta",
+                        "inter_delay": 0,
+                        "unit": "T/min",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "Instantaneous magnet sweep rate"
+                    },
+                    "magnet_swh": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_magnet_swh",
+                        "value": "STAT:SYS:VRM:SWHT:[NOSW NOSW NOSW]",
+                        "raw_value": "STAT:SYS:VRM:SWHT:[NOSW NOSW NOSW]",
+                        "ts": "2026-05-08 15:07:44",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "magnet_swh",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "Magnet persistent switch heater"
+                    },
+                    "magnet_POC": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_magnet_POC",
+                        "value": 0,
+                        "raw_value": "STAT:SYS:VRM:POC:OFF",
+                        "ts": "2026-05-08 15:07:45",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "magnet_POC",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "Persistent after completing sweep?"
+                    },
+                    "B": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_B",
+                        "value": [
+                            5e-06,
+                            -2e-06,
+                            1.37781
+                        ],
+                        "raw_value": [
+                            5e-06,
+                            -2e-06,
+                            1.37781
+                        ],
+                        "ts": "2026-05-08 15:07:46",
+                        "name": "B",
+                        "inter_delay": 0,
+                        "unit": "T",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "Magnetic field"
+                    },
+                    "sweep_Bx": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_sweep_Bx",
+                        "value": 2e-06,
+                        "raw_value": 2e-06,
+                        "ts": "2026-05-08 15:07:47",
+                        "name": "sweep_Bx",
+                        "inter_delay": 0,
+                        "unit": "T",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "Magnetic field x-component"
+                    },
+                    "sweep_By": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_sweep_By",
+                        "value": 2e-06,
+                        "raw_value": 2e-06,
+                        "ts": "2026-05-08 15:07:48",
+                        "name": "sweep_By",
+                        "inter_delay": 0,
+                        "unit": "T",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "Magnetic field y-component"
+                    },
+                    "sweep_Bz": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_sweep_Bz",
+                        "value": 3,
+                        "raw_value": 3,
+                        "ts": "2026-05-14 00:56:03",
+                        "name": "sweep_Bz",
+                        "inter_delay": 0,
+                        "unit": "T",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "Magnetic field z-component"
+                    },
+                    "field": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_field",
+                        "value": [
+                            5e-06,
+                            2e-06,
+                            2.00002
+                        ],
+                        "raw_value": [
+                            5e-06,
+                            2e-06,
+                            2.00002
+                        ],
+                        "ts": "2026-05-14 00:45:42",
+                        "name": "field",
+                        "inter_delay": 0,
+                        "unit": "T",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "B"
+                    },
+                    "field_Bx": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_field_Bx",
+                        "value": -2e-06,
+                        "raw_value": -2e-06,
+                        "ts": "2026-05-08 15:07:51",
+                        "name": "field_Bx",
+                        "inter_delay": 0,
+                        "unit": "T",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "B"
+                    },
+                    "field_By": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_field_By",
+                        "value": -8e-06,
+                        "raw_value": -8e-06,
+                        "ts": "2026-05-08 15:07:52",
+                        "name": "field_By",
+                        "inter_delay": 0,
+                        "unit": "T",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "B"
+                    },
+                    "field_Bz": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_field_Bz",
+                        "value": 1.37782,
+                        "raw_value": 1.37782,
+                        "ts": "2026-05-08 15:07:53",
+                        "name": "field_Bz",
+                        "inter_delay": 0,
+                        "unit": "T",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "B"
+                    },
+                    "field_set_stable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_field_set_stable",
+                        "value": [
+                            2e-06,
+                            -1e-05,
+                            1.37783
+                        ],
+                        "raw_value": [
+                            2e-06,
+                            -1e-05,
+                            1.37783
+                        ],
+                        "ts": "2026-05-08 15:07:54",
+                        "name": "field_set_stable",
+                        "inter_delay": 0,
+                        "unit": "T",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "B"
+                    },
+                    "magnet_sweep_time": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_magnet_sweep_time",
+                        "value": 0.0496,
+                        "raw_value": 0.0496,
+                        "ts": "2026-05-08 15:07:55",
+                        "name": "magnet_sweep_time",
+                        "inter_delay": 0,
+                        "unit": "T/min",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "Magnet sweep time"
+                    },
+                    "MC_heater": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_MC_heater",
+                        "value": 0.0,
+                        "raw_value": "STAT:DEV:H1:HTR:SIG:POWR:0uW",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Numbers 0<=v<=300000>",
+                        "name": "MC_heater",
+                        "inter_delay": 0,
+                        "unit": "uW",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Numbers 0<=v<=300000>"
+                        ],
+                        "label": "Mixing chamber heater power"
+                    },
+                    "still_heater": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_still_heater",
+                        "value": 0.0,
+                        "raw_value": "STAT:DEV:H2:HTR:SIG:POWR:0uW",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Numbers 0<=v<=300000>",
+                        "name": "still_heater",
+                        "inter_delay": 0,
+                        "unit": "uW",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Numbers 0<=v<=300000>"
+                        ],
+                        "label": "Still heater power"
+                    },
+                    "turbo_speed": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_turbo_speed",
+                        "value": 819.0,
+                        "raw_value": "STAT:DEV:TURB1:PUMP:SIG:SPD:819Hz",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "turbo_speed",
+                        "inter_delay": 0,
+                        "unit": "Hz",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "turbo_speed"
+                    },
+                    "MC_temp": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_MC_temp",
+                        "value": 0.0635297,
+                        "raw_value": "STAT:DEV:T8:TEMP:SIG:TEMP:0.0635297K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "MC_temp",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "MC_temp"
+                    },
+                    "MC_temp_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_MC_temp_enable",
+                        "value": 1,
+                        "raw_value": "STAT:DEV:T8:TEMP:MEAS:ENAB:ON",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "MC_temp_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "MC_temp_enable"
+                    },
+                    "MC_Res": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_MC_Res",
+                        "value": 55262.3,
+                        "raw_value": "STAT:DEV:T8:TEMP:SIG:RES:55262.3Ohm",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "MC_Res",
+                        "inter_delay": 0,
+                        "unit": "Ohms",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "MC_Res"
+                    },
+                    "MC_cernox_temp": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_MC_cernox_temp",
+                        "value": 321.181,
+                        "raw_value": "STAT:DEV:T5:TEMP:SIG:TEMP:321.181K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "MC_cernox_temp",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "MC_cernox_temp"
+                    },
+                    "MC_cernox_temp_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_MC_cernox_temp_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T5:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "MC_cernox_temp_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "MC_cernox_temp_enable"
+                    },
+                    "still_temp": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_still_temp",
+                        "value": 0.87243,
+                        "raw_value": "STAT:DEV:T3:TEMP:SIG:TEMP:0.87243K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "still_temp",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "still_temp"
+                    },
+                    "still_temp_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_still_temp_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T3:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "still_temp_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "still_temp_enable"
+                    },
+                    "cold_plate_temp": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_cold_plate_temp",
+                        "value": 0.510129,
+                        "raw_value": "STAT:DEV:T4:TEMP:SIG:TEMP:0.510129K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "cold_plate_temp",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "cold_plate_temp"
+                    },
+                    "cold_plate_temp_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_cold_plate_temp_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T4:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "cold_plate_temp_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "cold_plate_temp_enable"
+                    },
+                    "magnet_temp": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_magnet_temp",
+                        "value": 3.85632,
+                        "raw_value": "STAT:DEV:T13:TEMP:SIG:TEMP:3.85632K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "magnet_temp",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "magnet_temp"
+                    },
+                    "magnet_temp_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_magnet_temp_enable",
+                        "value": 1,
+                        "raw_value": "STAT:DEV:T13:TEMP:MEAS:ENAB:ON",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "magnet_temp_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "magnet_temp_enable"
+                    },
+                    "PT2h_temp": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_PT2h_temp",
+                        "value": 3.4026,
+                        "raw_value": "STAT:DEV:T1:TEMP:SIG:TEMP:3.4026K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "PT2h_temp",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "PT2h_temp"
+                    },
+                    "PT2h_temp_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_PT2h_temp_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T1:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "PT2h_temp_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "PT2h_temp_enable"
+                    },
+                    "PT2p_temp": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_PT2p_temp",
+                        "value": 3.5771,
+                        "raw_value": "STAT:DEV:T2:TEMP:SIG:TEMP:3.5771K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "PT2p_temp",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "PT2p_temp"
+                    },
+                    "PT2p_temp_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_PT2p_temp_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T2:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "PT2p_temp_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "PT2p_temp_enable"
+                    },
+                    "PT1h_temp": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_PT1h_temp",
+                        "value": 40.5191,
+                        "raw_value": "STAT:DEV:T6:TEMP:SIG:TEMP:40.5191K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "PT1h_temp",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "PT1h_temp"
+                    },
+                    "PT1h_temp_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_PT1h_temp_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T6:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "PT1h_temp_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "PT1h_temp_enable"
+                    },
+                    "PT1p_temp": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_PT1p_temp",
+                        "value": 45.4507,
+                        "raw_value": "STAT:DEV:T7:TEMP:SIG:TEMP:45.4507K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "PT1p_temp",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "PT1p_temp"
+                    },
+                    "PT1p_temp_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_PT1p_temp_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T7:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "PT1p_temp_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "PT1p_temp_enable"
+                    },
+                    "T1": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T1",
+                        "value": 3.4026,
+                        "raw_value": "STAT:DEV:T1:TEMP:SIG:TEMP:3.4026K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T1",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T1"
+                    },
+                    "T1_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T1_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T1:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T1_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T1_enable"
+                    },
+                    "T2": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T2",
+                        "value": 3.5771,
+                        "raw_value": "STAT:DEV:T2:TEMP:SIG:TEMP:3.5771K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T2",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T2"
+                    },
+                    "T2_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T2_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T2:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T2_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T2_enable"
+                    },
+                    "T3": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T3",
+                        "value": 0.87243,
+                        "raw_value": "STAT:DEV:T3:TEMP:SIG:TEMP:0.87243K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T3",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T3"
+                    },
+                    "T3_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T3_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T3:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T3_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T3_enable"
+                    },
+                    "T4": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T4",
+                        "value": 0.510129,
+                        "raw_value": "STAT:DEV:T4:TEMP:SIG:TEMP:0.510129K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T4",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T4"
+                    },
+                    "T4_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T4_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T4:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T4_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T4_enable"
+                    },
+                    "T5": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T5",
+                        "value": 321.181,
+                        "raw_value": "STAT:DEV:T5:TEMP:SIG:TEMP:321.181K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T5",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T5"
+                    },
+                    "T5_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T5_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T5:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T5_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T5_enable"
+                    },
+                    "T6": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T6",
+                        "value": 40.5191,
+                        "raw_value": "STAT:DEV:T6:TEMP:SIG:TEMP:40.5191K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T6",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T6"
+                    },
+                    "T6_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T6_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T6:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T6_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T6_enable"
+                    },
+                    "T7": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T7",
+                        "value": 45.4507,
+                        "raw_value": "STAT:DEV:T7:TEMP:SIG:TEMP:45.4507K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T7",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T7"
+                    },
+                    "T7_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T7_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T7:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T7_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T7_enable"
+                    },
+                    "T8": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T8",
+                        "value": 0.848053,
+                        "raw_value": "STAT:DEV:T8:TEMP:SIG:TEMP:0.848053K",
+                        "ts": "2026-05-14 01:48:02",
+                        "name": "T8",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T8"
+                    },
+                    "T8_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T8_enable",
+                        "value": 1,
+                        "raw_value": "STAT:DEV:T8:TEMP:MEAS:ENAB:ON",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T8_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T8_enable"
+                    },
+                    "T9": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T9",
+                        "value": 0.0,
+                        "raw_value": "STAT:DEV:T9:TEMP:SIG:TEMP:0K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T9",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T9"
+                    },
+                    "T9_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T9_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T9:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T9_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T9_enable"
+                    },
+                    "T10": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T10",
+                        "value": 0.0,
+                        "raw_value": "STAT:DEV:T10:TEMP:SIG:TEMP:0K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T10",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T10"
+                    },
+                    "T10_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T10_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T10:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T10_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T10_enable"
+                    },
+                    "T11": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T11",
+                        "value": 297.251,
+                        "raw_value": "STAT:DEV:T11:TEMP:SIG:TEMP:297.251K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T11",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T11"
+                    },
+                    "T11_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T11_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T11:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T11_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T11_enable"
+                    },
+                    "T12": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T12",
+                        "value": 0.0,
+                        "raw_value": "STAT:DEV:T12:TEMP:SIG:TEMP:0K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T12",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T12"
+                    },
+                    "T12_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T12_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T12:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T12_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T12_enable"
+                    },
+                    "T13": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T13",
+                        "value": 3.85632,
+                        "raw_value": "STAT:DEV:T13:TEMP:SIG:TEMP:3.85632K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T13",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T13"
+                    },
+                    "T13_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T13_enable",
+                        "value": 1,
+                        "raw_value": "STAT:DEV:T13:TEMP:MEAS:ENAB:ON",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T13_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T13_enable"
+                    },
+                    "T14": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T14",
+                        "value": 297.257,
+                        "raw_value": "STAT:DEV:T14:TEMP:SIG:TEMP:297.257K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T14",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T14"
+                    },
+                    "T14_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T14_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T14:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T14_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T14_enable"
+                    },
+                    "T15": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T15",
+                        "value": 297.298,
+                        "raw_value": "STAT:DEV:T15:TEMP:SIG:TEMP:297.298K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T15",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T15"
+                    },
+                    "T15_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T15_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T15:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T15_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T15_enable"
+                    },
+                    "T16": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T16",
+                        "value": 297.241,
+                        "raw_value": "STAT:DEV:T16:TEMP:SIG:TEMP:297.241K",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "T16",
+                        "inter_delay": 0,
+                        "unit": "K",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "T16"
+                    },
+                    "T16_enable": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_T16_enable",
+                        "value": 0,
+                        "raw_value": "STAT:DEV:T16:TEMP:MEAS:ENAB:OFF",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "T16_enable",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "T16_enable"
+                    },
+                    "P1": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_P1",
+                        "value": 27.6603,
+                        "raw_value": "STAT:DEV:P1:PRES:SIG:PRES:27.6603mB",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "P1",
+                        "inter_delay": 0,
+                        "unit": "mbar",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "P1"
+                    },
+                    "P2": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_P2",
+                        "value": 328.205,
+                        "raw_value": "STAT:DEV:P2:PRES:SIG:PRES:328.205mB",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "P2",
+                        "inter_delay": 0,
+                        "unit": "mbar",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "P2"
+                    },
+                    "P3": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_P3",
+                        "value": 0.0477,
+                        "raw_value": "STAT:DEV:P3:PRES:SIG:PRES:0.0477mB",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "P3",
+                        "inter_delay": 0,
+                        "unit": "mbar",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "P3"
+                    },
+                    "P4": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_P4",
+                        "value": 0.955,
+                        "raw_value": "STAT:DEV:P4:PRES:SIG:PRES:0.955mB",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "P4",
+                        "inter_delay": 0,
+                        "unit": "mbar",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "P4"
+                    },
+                    "P5": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_P5",
+                        "value": 87.4825,
+                        "raw_value": "STAT:DEV:P5:PRES:SIG:PRES:87.4825mB",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "P5",
+                        "inter_delay": 0,
+                        "unit": "mbar",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "P5"
+                    },
+                    "POVC": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_POVC",
+                        "value": 0.0002,
+                        "raw_value": "STAT:DEV:P6:PRES:SIG:PRES:0.0002mB",
+                        "ts": "2026-05-08 15:07:56",
+                        "name": "POVC",
+                        "inter_delay": 0,
+                        "unit": "mbar",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [],
+                        "label": "POVC"
+                    },
+                    "V1": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_V1",
+                        "value": "OPEN",
+                        "raw_value": "STAT:DEV:V1:VALV:SIG:STATE:OPEN",
+                        "ts": "2026-05-08 15:07:56",
+                        "vals": "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>",
+                        "name": "V1",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>"
+                        ],
+                        "label": "V1"
+                    },
+                    "V2": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_V2",
+                        "value": "CLOSE",
+                        "raw_value": "STAT:DEV:V2:VALV:SIG:STATE:CLOSE",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>",
+                        "name": "V2",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>"
+                        ],
+                        "label": "V2"
+                    },
+                    "V3": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_V3",
+                        "value": "CLOSE",
+                        "raw_value": "STAT:DEV:V3:VALV:SIG:STATE:CLOSE",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>",
+                        "name": "V3",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>"
+                        ],
+                        "label": "V3"
+                    },
+                    "V4": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_V4",
+                        "value": "CLOSE",
+                        "raw_value": "STAT:DEV:V4:VALV:SIG:STATE:CLOSE",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>",
+                        "name": "V4",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>"
+                        ],
+                        "label": "V4"
+                    },
+                    "V5": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_V5",
+                        "value": "OPEN",
+                        "raw_value": "STAT:DEV:V5:VALV:SIG:STATE:OPEN",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>",
+                        "name": "V5",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>"
+                        ],
+                        "label": "V5"
+                    },
+                    "V6": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_V6",
+                        "value": "CLOSE",
+                        "raw_value": "STAT:DEV:V6:VALV:SIG:STATE:CLOSE",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>",
+                        "name": "V6",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>"
+                        ],
+                        "label": "V6"
+                    },
+                    "V7": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_V7",
+                        "value": "OPEN",
+                        "raw_value": "STAT:DEV:V7:VALV:SIG:STATE:OPEN",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>",
+                        "name": "V7",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>"
+                        ],
+                        "label": "V7"
+                    },
+                    "V8": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_V8",
+                        "value": "OPEN",
+                        "raw_value": "STAT:DEV:V8:VALV:SIG:STATE:OPEN",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>",
+                        "name": "V8",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>"
+                        ],
+                        "label": "V8"
+                    },
+                    "V9": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_V9",
+                        "value": "CLOSE",
+                        "raw_value": "STAT:DEV:V9:VALV:SIG:STATE:CLOSE",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>",
+                        "name": "V9",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {'CLOSE', 'OPEN', 'TOGGLE'}>"
+                        ],
+                        "label": "V9"
+                    },
+                    "turbo": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_turbo",
+                        "value": 1,
+                        "raw_value": "STAT:DEV:TURB1:PUMP:SIG:STATE:ON",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "turbo",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "turbo"
+                    },
+                    "knf": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_knf",
+                        "value": 1,
+                        "raw_value": "STAT:DEV:COMP:PUMP:SIG:STATE:ON",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "knf",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "knf"
+                    },
+                    "forepump": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "triton_forepump",
+                        "value": 1,
+                        "raw_value": "STAT:DEV:FP:PUMP:SIG:STATE:ON",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "forepump",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                        "instrument_name": "triton",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "forepump"
+                    }
+                },
+                "__class__": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                "label": "triton",
+                "name": "triton",
+                "port": 33576,
+                "confirmation": true,
+                "address": "169.254.25.164",
+                "terminator": "\r\n",
+                "timeout": 20,
+                "persistent": true
+            },
+            "lockin865": {
+                "functions": {
+                    "auto_range": {},
+                    "auto_scale": {},
+                    "auto_phase": {},
+                    "reset": {},
+                    "disable_front_panel": {},
+                    "enable_front_panel": {}
+                },
+                "submodules": {
+                    "data_channel_1": {
+                        "functions": {},
+                        "submodules": {},
+                        "parameters": {
+                            "assigned_parameter": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_data_channel_1_assigned_parameter",
+                                "value": "X",
+                                "raw_value": "0",
+                                "ts": "2026-05-08 15:07:57",
+                                "vals": "<Enum: {'aux_out2', 'aux_out1', 'Xnoise', 'phase', 'aux_in2', 'amplitude', 'Y', 'aux_in1', 'X', 'aux_in3', 'sine_outdc', 'aux_in4', 'Ynoise', 'frequency_ext', 'frequency', 'P', 'R'}>",
+                                "val_mapping": {
+                                    "X": "0",
+                                    "Y": "1",
+                                    "R": "2",
+                                    "P": "3",
+                                    "aux_in1": "4",
+                                    "aux_in2": "5",
+                                    "aux_in3": "6",
+                                    "aux_in4": "7",
+                                    "Xnoise": "8",
+                                    "Ynoise": "9",
+                                    "aux_out1": "10",
+                                    "aux_out2": "11",
+                                    "phase": "12",
+                                    "amplitude": "13",
+                                    "sine_outdc": "14",
+                                    "frequency": "15",
+                                    "frequency_ext": "16"
+                                },
+                                "name": "assigned_parameter",
+                                "inter_delay": 0,
+                                "unit": "",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xDataChannel",
+                                "instrument_name": "lockin865_data_channel_1",
+                                "validators": [
+                                    "<Enum: {'aux_out2', 'aux_out1', 'Xnoise', 'phase', 'aux_in2', 'amplitude', 'Y', 'aux_in1', 'X', 'aux_in3', 'sine_outdc', 'aux_in4', 'Ynoise', 'frequency_ext', 'frequency', 'P', 'R'}>"
+                                ],
+                                "label": "Data channel 0 parameter"
+                            }
+                        },
+                        "__class__": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xDataChannel",
+                        "label": "data_channel_1",
+                        "name": "lockin865_data_channel_1"
+                    },
+                    "data_channel_2": {
+                        "functions": {},
+                        "submodules": {},
+                        "parameters": {
+                            "assigned_parameter": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_data_channel_2_assigned_parameter",
+                                "value": "Y",
+                                "raw_value": "1",
+                                "ts": "2026-05-08 15:07:57",
+                                "vals": "<Enum: {'aux_out2', 'aux_out1', 'Xnoise', 'phase', 'aux_in2', 'amplitude', 'Y', 'aux_in1', 'X', 'aux_in3', 'sine_outdc', 'aux_in4', 'Ynoise', 'frequency_ext', 'frequency', 'P', 'R'}>",
+                                "val_mapping": {
+                                    "X": "0",
+                                    "Y": "1",
+                                    "R": "2",
+                                    "P": "3",
+                                    "aux_in1": "4",
+                                    "aux_in2": "5",
+                                    "aux_in3": "6",
+                                    "aux_in4": "7",
+                                    "Xnoise": "8",
+                                    "Ynoise": "9",
+                                    "aux_out1": "10",
+                                    "aux_out2": "11",
+                                    "phase": "12",
+                                    "amplitude": "13",
+                                    "sine_outdc": "14",
+                                    "frequency": "15",
+                                    "frequency_ext": "16"
+                                },
+                                "name": "assigned_parameter",
+                                "inter_delay": 0,
+                                "unit": "",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xDataChannel",
+                                "instrument_name": "lockin865_data_channel_2",
+                                "validators": [
+                                    "<Enum: {'aux_out2', 'aux_out1', 'Xnoise', 'phase', 'aux_in2', 'amplitude', 'Y', 'aux_in1', 'X', 'aux_in3', 'sine_outdc', 'aux_in4', 'Ynoise', 'frequency_ext', 'frequency', 'P', 'R'}>"
+                                ],
+                                "label": "Data channel 1 parameter"
+                            }
+                        },
+                        "__class__": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xDataChannel",
+                        "label": "data_channel_2",
+                        "name": "lockin865_data_channel_2"
+                    },
+                    "data_channel_3": {
+                        "functions": {},
+                        "submodules": {},
+                        "parameters": {
+                            "assigned_parameter": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_data_channel_3_assigned_parameter",
+                                "value": "R",
+                                "raw_value": "2",
+                                "ts": "2026-05-08 15:07:57",
+                                "vals": "<Enum: {'aux_out2', 'aux_out1', 'Xnoise', 'phase', 'aux_in2', 'amplitude', 'Y', 'aux_in1', 'X', 'aux_in3', 'sine_outdc', 'aux_in4', 'Ynoise', 'frequency_ext', 'frequency', 'P', 'R'}>",
+                                "val_mapping": {
+                                    "X": "0",
+                                    "Y": "1",
+                                    "R": "2",
+                                    "P": "3",
+                                    "aux_in1": "4",
+                                    "aux_in2": "5",
+                                    "aux_in3": "6",
+                                    "aux_in4": "7",
+                                    "Xnoise": "8",
+                                    "Ynoise": "9",
+                                    "aux_out1": "10",
+                                    "aux_out2": "11",
+                                    "phase": "12",
+                                    "amplitude": "13",
+                                    "sine_outdc": "14",
+                                    "frequency": "15",
+                                    "frequency_ext": "16"
+                                },
+                                "name": "assigned_parameter",
+                                "inter_delay": 0,
+                                "unit": "",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xDataChannel",
+                                "instrument_name": "lockin865_data_channel_3",
+                                "validators": [
+                                    "<Enum: {'aux_out2', 'aux_out1', 'Xnoise', 'phase', 'aux_in2', 'amplitude', 'Y', 'aux_in1', 'X', 'aux_in3', 'sine_outdc', 'aux_in4', 'Ynoise', 'frequency_ext', 'frequency', 'P', 'R'}>"
+                                ],
+                                "label": "Data channel 2 parameter"
+                            }
+                        },
+                        "__class__": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xDataChannel",
+                        "label": "data_channel_3",
+                        "name": "lockin865_data_channel_3"
+                    },
+                    "data_channel_4": {
+                        "functions": {},
+                        "submodules": {},
+                        "parameters": {
+                            "assigned_parameter": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_data_channel_4_assigned_parameter",
+                                "value": "P",
+                                "raw_value": "3",
+                                "ts": "2026-05-08 15:07:57",
+                                "vals": "<Enum: {'aux_out2', 'aux_out1', 'Xnoise', 'phase', 'aux_in2', 'amplitude', 'Y', 'aux_in1', 'X', 'aux_in3', 'sine_outdc', 'aux_in4', 'Ynoise', 'frequency_ext', 'frequency', 'P', 'R'}>",
+                                "val_mapping": {
+                                    "X": "0",
+                                    "Y": "1",
+                                    "R": "2",
+                                    "P": "3",
+                                    "aux_in1": "4",
+                                    "aux_in2": "5",
+                                    "aux_in3": "6",
+                                    "aux_in4": "7",
+                                    "Xnoise": "8",
+                                    "Ynoise": "9",
+                                    "aux_out1": "10",
+                                    "aux_out2": "11",
+                                    "phase": "12",
+                                    "amplitude": "13",
+                                    "sine_outdc": "14",
+                                    "frequency": "15",
+                                    "frequency_ext": "16"
+                                },
+                                "name": "assigned_parameter",
+                                "inter_delay": 0,
+                                "unit": "",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xDataChannel",
+                                "instrument_name": "lockin865_data_channel_4",
+                                "validators": [
+                                    "<Enum: {'aux_out2', 'aux_out1', 'Xnoise', 'phase', 'aux_in2', 'amplitude', 'Y', 'aux_in1', 'X', 'aux_in3', 'sine_outdc', 'aux_in4', 'Ynoise', 'frequency_ext', 'frequency', 'P', 'R'}>"
+                                ],
+                                "label": "Data channel 3 parameter"
+                            }
+                        },
+                        "__class__": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xDataChannel",
+                        "label": "data_channel_4",
+                        "name": "lockin865_data_channel_4"
+                    },
+                    "data_channels": {
+                        "snapshotable": false,
+                        "__class__": "qcodes.instrument.channel.ChannelTuple"
+                    },
+                    "buffer": {
+                        "functions": {},
+                        "submodules": {},
+                        "parameters": {
+                            "capture_length_in_kb": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_lockin865_buffer_capture_length_in_kb",
+                                "value": 4,
+                                "raw_value": "4",
+                                "ts": "2026-05-08 15:07:57",
+                                "name": "capture_length_in_kb",
+                                "inter_delay": 0,
+                                "unit": "kB",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "validators": [],
+                                "label": "get/set capture length"
+                            },
+                            "capture_config": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_lockin865_buffer_capture_config",
+                                "value": "X,Y,R,T",
+                                "raw_value": "3",
+                                "ts": "2026-05-08 15:07:57",
+                                "vals": "<Enum: {'R,T', 'X,Y,R,T', 'X,Y', 'X'}>",
+                                "val_mapping": {
+                                    "X": "0",
+                                    "X,Y": "1",
+                                    "R,T": "2",
+                                    "X,Y,R,T": "3"
+                                },
+                                "name": "capture_config",
+                                "inter_delay": 0,
+                                "unit": "",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "validators": [
+                                    "<Enum: {'R,T', 'X,Y,R,T', 'X,Y', 'X'}>"
+                                ],
+                                "label": "capture configuration"
+                            },
+                            "capture_rate_max": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_lockin865_buffer_capture_rate_max",
+                                "value": 2441.40625,
+                                "raw_value": "2441.40625",
+                                "ts": "2026-05-08 15:07:57",
+                                "name": "capture_rate_max",
+                                "inter_delay": 0,
+                                "unit": "",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "validators": [],
+                                "label": "capture rate maximum"
+                            },
+                            "capture_rate": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_lockin865_buffer_capture_rate",
+                                "value": 2441.40625,
+                                "raw_value": "2441.40625",
+                                "ts": "2026-05-08 15:07:57",
+                                "name": "capture_rate",
+                                "inter_delay": 0,
+                                "unit": "",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "validators": [],
+                                "label": "capture rate raw"
+                            },
+                            "capture_status": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_lockin865_buffer_capture_status",
+                                "value": "0",
+                                "raw_value": "0",
+                                "ts": "2026-05-08 15:07:57",
+                                "name": "capture_status",
+                                "inter_delay": 0,
+                                "unit": "",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "validators": [],
+                                "label": "capture status"
+                            },
+                            "count_capture_bytes": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_lockin865_buffer_count_capture_bytes",
+                                "value": 0,
+                                "raw_value": "0",
+                                "ts": "2026-05-08 15:07:57",
+                                "name": "count_capture_bytes",
+                                "inter_delay": 0,
+                                "unit": "B",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "validators": [],
+                                "label": "captured bytes"
+                            },
+                            "count_capture_kilobytes": {
+                                "__class__": "qcodes.parameters.parameter.Parameter",
+                                "full_name": "lockin865_lockin865_buffer_count_capture_kilobytes",
+                                "value": null,
+                                "raw_value": null,
+                                "ts": null,
+                                "name": "count_capture_kilobytes",
+                                "inter_delay": 0,
+                                "unit": "kB",
+                                "post_delay": 0,
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "validators": [],
+                                "label": "captured kilobytes"
+                            },
+                            "X": {
+                                "__class__": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBufferReadout",
+                                "full_name": "lockin865_lockin865_buffer_X",
+                                "ts": null,
+                                "name": "X",
+                                "inter_delay": 0,
+                                "unit": "V",
+                                "post_delay": 0,
+                                "setpoint_units": [
+                                    "s"
+                                ],
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "setpoint_names": [
+                                    "Time"
+                                ],
+                                "validators": [],
+                                "label": "X",
+                                "setpoint_labels": [
+                                    "Time"
+                                ]
+                            },
+                            "Y": {
+                                "__class__": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBufferReadout",
+                                "full_name": "lockin865_lockin865_buffer_Y",
+                                "ts": null,
+                                "name": "Y",
+                                "inter_delay": 0,
+                                "unit": "V",
+                                "post_delay": 0,
+                                "setpoint_units": [
+                                    "s"
+                                ],
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "setpoint_names": [
+                                    "Time"
+                                ],
+                                "validators": [],
+                                "label": "Y",
+                                "setpoint_labels": [
+                                    "Time"
+                                ]
+                            },
+                            "R": {
+                                "__class__": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBufferReadout",
+                                "full_name": "lockin865_lockin865_buffer_R",
+                                "ts": null,
+                                "name": "R",
+                                "inter_delay": 0,
+                                "unit": "V",
+                                "post_delay": 0,
+                                "setpoint_units": [
+                                    "s"
+                                ],
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "setpoint_names": [
+                                    "Time"
+                                ],
+                                "validators": [],
+                                "label": "R",
+                                "setpoint_labels": [
+                                    "Time"
+                                ]
+                            },
+                            "T": {
+                                "__class__": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBufferReadout",
+                                "full_name": "lockin865_lockin865_buffer_T",
+                                "ts": null,
+                                "name": "T",
+                                "inter_delay": 0,
+                                "unit": "deg",
+                                "post_delay": 0,
+                                "setpoint_units": [
+                                    "s"
+                                ],
+                                "instrument": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                                "instrument_name": "lockin865_lockin865_buffer",
+                                "setpoint_names": [
+                                    "Time"
+                                ],
+                                "validators": [],
+                                "label": "T",
+                                "setpoint_labels": [
+                                    "Time"
+                                ]
+                            }
+                        },
+                        "__class__": "qcodes.instrument_drivers.stanford_research.SR86x.SR86xBuffer",
+                        "label": "lockin865_buffer",
+                        "name": "lockin865_lockin865_buffer"
+                    }
+                },
+                "parameters": {
+                    "IDN": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_IDN",
+                        "value": {
+                            "vendor": "Stanford_Research_Systems",
+                            "model": "SR865A",
+                            "serial": "003538",
+                            "firmware": "V1.51"
+                        },
+                        "raw_value": {
+                            "vendor": "Stanford_Research_Systems",
+                            "model": "SR865A",
+                            "serial": "003538",
+                            "firmware": "V1.51"
+                        },
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Anything>",
+                        "name": "IDN",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Anything>"
+                        ],
+                        "label": "IDN"
+                    },
+                    "timeout": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_timeout",
+                        "value": 10.0,
+                        "raw_value": 10.0,
+                        "ts": "2026-05-13 11:44:14",
+                        "vals": "<MultiType: Numbers v>=0, Enum: {None}>",
+                        "name": "timeout",
+                        "inter_delay": 0,
+                        "unit": "s",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<MultiType: Numbers v>=0, Enum: {None}>"
+                        ],
+                        "label": "timeout"
+                    },
+                    "frequency": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_frequency",
+                        "value": 23.33,
+                        "raw_value": "23.33",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Numbers 0.001<=v<=4000000.0>",
+                        "name": "frequency",
+                        "inter_delay": 0,
+                        "unit": "Hz",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Numbers 0.001<=v<=4000000.0>"
+                        ],
+                        "label": "Frequency"
+                    },
+                    "sine_outdc": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_sine_outdc",
+                        "value": 0.0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Numbers -5<=v<=5>",
+                        "name": "sine_outdc",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Numbers -5<=v<=5>"
+                        ],
+                        "label": "Sine out dc level"
+                    },
+                    "amplitude": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_amplitude",
+                        "value": 0.5,
+                        "raw_value": "0.5",
+                        "ts": "2026-05-14 01:48:02",
+                        "vals": "<Numbers 0<=v<=2>",
+                        "name": "amplitude",
+                        "inter_delay": 0.1,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "step": 0.1,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Numbers 0<=v<=2>"
+                        ],
+                        "label": "Amplitude"
+                    },
+                    "harmonic": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_harmonic",
+                        "value": 1,
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Ints 1<=v<=99>",
+                        "name": "harmonic",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Ints 1<=v<=99>"
+                        ],
+                        "label": "Harmonic"
+                    },
+                    "phase": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_phase",
+                        "value": 0.0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Numbers -360000.0<=v<=360000.0>",
+                        "name": "phase",
+                        "inter_delay": 0,
+                        "unit": "deg",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Numbers -360000.0<=v<=360000.0>"
+                        ],
+                        "label": "Phase"
+                    },
+                    "sensitivity": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_sensitivity",
+                        "value": 0.05,
+                        "raw_value": "4",
+                        "ts": "2026-05-08 15:08:02",
+                        "vals": "<Enum: {0.5, 1, 0.2, 2e-09, 5e-05, 1e-08, 2e-08, 0.0001, 0.05, 0.0002, 5e-06, 5e-08, 1e-06, 0.1, 1e-09, 5e-09, 2e-05, 0.02, 5e-07, 1e-05, 0.01, 2e-07, 0.005, 1e-07, 2e-06, 0.002, 0.001, 0.0005}>",
+                        "name": "sensitivity",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {0.5, 1, 0.2, 2e-09, 5e-05, 1e-08, 2e-08, 0.0001, 0.05, 0.0002, 5e-06, 5e-08, 1e-06, 0.1, 1e-09, 5e-09, 2e-05, 0.02, 5e-07, 1e-05, 0.01, 2e-07, 0.005, 1e-07, 2e-06, 0.002, 0.001, 0.0005}>"
+                        ],
+                        "label": "Sensitivity"
+                    },
+                    "filter_slope": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_filter_slope",
+                        "value": 24,
+                        "raw_value": "3",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {24, 18, 12, 6}>",
+                        "val_mapping": {
+                            "6": 0,
+                            "12": 1,
+                            "18": 2,
+                            "24": 3,
+                            "6": 0,
+                            "12": 1,
+                            "18": 2,
+                            "24": 3
+                        },
+                        "name": "filter_slope",
+                        "inter_delay": 0,
+                        "unit": "dB/oct",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {24, 18, 12, 6}>"
+                        ],
+                        "label": "Filter slope"
+                    },
+                    "sync_filter": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_sync_filter",
+                        "value": "ON",
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'ON', 'OFF'}>",
+                        "val_mapping": {
+                            "OFF": 0,
+                            "ON": 1
+                        },
+                        "name": "sync_filter",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'ON', 'OFF'}>"
+                        ],
+                        "label": "Sync filter"
+                    },
+                    "noise_bandwidth": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_noise_bandwidth",
+                        "value": 1.2970000505,
+                        "raw_value": "1.2970000505",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "noise_bandwidth",
+                        "inter_delay": 0,
+                        "unit": "Hz",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Noise bandwidth"
+                    },
+                    "signal_strength": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_signal_strength",
+                        "value": 2,
+                        "raw_value": "2",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "signal_strength",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Signal strength indicator"
+                    },
+                    "signal_input": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_signal_input",
+                        "value": "voltage",
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:08:02",
+                        "vals": "<Enum: {'voltage', 'current'}>",
+                        "name": "signal_input",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'voltage', 'current'}>"
+                        ],
+                        "label": "Signal input"
+                    },
+                    "input_range": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_input_range",
+                        "value": 0.1,
+                        "raw_value": "2",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {0.3, 1, 0.1, 0.03, 0.01}>",
+                        "val_mapping": {
+                            "1": 0,
+                            "0.3": 1,
+                            "0.1": 2,
+                            "0.03": 3,
+                            "0.01": 4,
+                            "1": 0,
+                            "0.3": 1,
+                            "0.1": 2,
+                            "0.03": 3,
+                            "0.01": 4
+                        },
+                        "name": "input_range",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {0.3, 1, 0.1, 0.03, 0.01}>"
+                        ],
+                        "label": "Input range"
+                    },
+                    "input_config": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_input_config",
+                        "value": "a",
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'a', 'a-b'}>",
+                        "val_mapping": {
+                            "a": 0,
+                            "a-b": 1
+                        },
+                        "name": "input_config",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'a', 'a-b'}>"
+                        ],
+                        "label": "Input configuration"
+                    },
+                    "input_shield": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_input_shield",
+                        "value": "ground",
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'ground', 'float'}>",
+                        "val_mapping": {
+                            "float": 0,
+                            "ground": 1
+                        },
+                        "name": "input_shield",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'ground', 'float'}>"
+                        ],
+                        "label": "Input shield"
+                    },
+                    "input_gain": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_input_gain",
+                        "value": 100000000.0,
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {1000000.0, 100000000.0}>",
+                        "val_mapping": {
+                            "1000000.0": 0,
+                            "100000000.0": 1,
+                            "1000000.0": 0,
+                            "100000000.0": 1
+                        },
+                        "name": "input_gain",
+                        "inter_delay": 0,
+                        "unit": "ohm",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {1000000.0, 100000000.0}>"
+                        ],
+                        "label": "Input gain"
+                    },
+                    "adv_filter": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_adv_filter",
+                        "value": "ON",
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'ON', 'OFF'}>",
+                        "val_mapping": {
+                            "OFF": 0,
+                            "ON": 1
+                        },
+                        "name": "adv_filter",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'ON', 'OFF'}>"
+                        ],
+                        "label": "Advanced filter"
+                    },
+                    "input_coupling": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_input_coupling",
+                        "value": "dc",
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'dc', 'ac'}>",
+                        "val_mapping": {
+                            "ac": 0,
+                            "dc": 1
+                        },
+                        "name": "input_coupling",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'dc', 'ac'}>"
+                        ],
+                        "label": "Input coupling"
+                    },
+                    "time_constant": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_time_constant",
+                        "value": 0.1,
+                        "raw_value": "10",
+                        "ts": "2026-05-14 01:48:02",
+                        "vals": "<Enum: {0.3, 1, 3, 10, 10000.0, 0.0001, 30, 300, 30000.0, 3000.0, 3e-06, 3e-05, 1e-06, 0.03, 0.1, 0.0003, 100, 1e-05, 1000.0, 0.01, 0.003, 0.001}>",
+                        "val_mapping": {
+                            "1e-06": 0,
+                            "3e-06": 1,
+                            "1e-05": 2,
+                            "3e-05": 3,
+                            "0.0001": 4,
+                            "0.0003": 5,
+                            "0.001": 6,
+                            "0.003": 7,
+                            "0.01": 8,
+                            "0.03": 9,
+                            "0.1": 10,
+                            "0.3": 11,
+                            "1": 12,
+                            "3": 13,
+                            "10": 14,
+                            "30": 15,
+                            "100": 16,
+                            "300": 17,
+                            "1000.0": 18,
+                            "3000.0": 19,
+                            "10000.0": 20,
+                            "30000.0": 21,
+                            "1e-06": 0,
+                            "3e-06": 1,
+                            "1e-05": 2,
+                            "3e-05": 3,
+                            "0.0001": 4,
+                            "0.0003": 5,
+                            "0.001": 6,
+                            "0.003": 7,
+                            "0.01": 8,
+                            "0.03": 9,
+                            "0.1": 10,
+                            "0.3": 11,
+                            "1": 12,
+                            "3": 13,
+                            "10": 14,
+                            "30": 15,
+                            "100": 16,
+                            "300": 17,
+                            "1000.0": 18,
+                            "3000.0": 19,
+                            "10000.0": 20,
+                            "30000.0": 21
+                        },
+                        "name": "time_constant",
+                        "inter_delay": 0,
+                        "unit": "s",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {0.3, 1, 3, 10, 10000.0, 0.0001, 30, 300, 30000.0, 3000.0, 3e-06, 3e-05, 1e-06, 0.03, 0.1, 0.0003, 100, 1e-05, 1000.0, 0.01, 0.003, 0.001}>"
+                        ],
+                        "label": "Time constant"
+                    },
+                    "external_reference_trigger": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_external_reference_trigger",
+                        "value": "SIN",
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'SIN', 'POSTTL', 'NEG', 'POS', 'NEGTTL'}>",
+                        "val_mapping": {
+                            "SIN": 0,
+                            "POS": 1,
+                            "POSTTL": 1,
+                            "NEG": 2,
+                            "NEGTTL": 2
+                        },
+                        "name": "external_reference_trigger",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'SIN', 'POSTTL', 'NEG', 'POS', 'NEGTTL'}>"
+                        ],
+                        "label": "External reference trigger mode"
+                    },
+                    "reference_source": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_reference_source",
+                        "value": "INT",
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'INT', 'DUAL', 'CHOP', 'EXT'}>",
+                        "val_mapping": {
+                            "INT": 0,
+                            "EXT": 1,
+                            "DUAL": 2,
+                            "CHOP": 3
+                        },
+                        "name": "reference_source",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'INT', 'DUAL', 'CHOP', 'EXT'}>"
+                        ],
+                        "label": "Reference source"
+                    },
+                    "external_reference_trigger_input_resistance": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_external_reference_trigger_input_resistance",
+                        "value": 1,
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {0, 1, '1MEG', '1M', '50OHMS', '50'}>",
+                        "val_mapping": {
+                            "50": 0,
+                            "50OHMS": 0,
+                            "0": 0,
+                            "1M": 1,
+                            "1MEG": 1,
+                            "1": 1,
+                            "0": 0,
+                            "1": 1
+                        },
+                        "name": "external_reference_trigger_input_resistance",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {0, 1, '1MEG', '1M', '50OHMS', '50'}>"
+                        ],
+                        "label": "External reference trigger input resistance"
+                    },
+                    "X": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_X",
+                        "value": 1.5275880969e-06,
+                        "raw_value": "1.5275880969e-06",
+                        "ts": "2026-05-13 23:10:55",
+                        "name": "X",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "In-phase Magnitude"
+                    },
+                    "Y": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_Y",
+                        "value": -2.5986134915e-06,
+                        "raw_value": "-2.5986134915e-06",
+                        "ts": "2026-05-13 23:10:55",
+                        "name": "Y",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Out-phase Magnitude"
+                    },
+                    "R": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_R",
+                        "value": 0.00016991635493,
+                        "raw_value": "0.00016991635493",
+                        "ts": "2026-05-08 16:08:21",
+                        "name": "R",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Magnitude"
+                    },
+                    "P": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_P",
+                        "value": -160.85308838,
+                        "raw_value": "-160.85308838",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "P",
+                        "inter_delay": 0,
+                        "unit": "deg",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Phase"
+                    },
+                    "complex_voltage": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_complex_voltage",
+                        "value": {
+                            "__dtype__": "complex",
+                            "re": -0.010416551493,
+                            "im": -0.0036174040288
+                        },
+                        "raw_value": {
+                            "__dtype__": "complex",
+                            "re": -0.010416551493,
+                            "im": -0.0036174040288
+                        },
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Complex Number>",
+                        "name": "complex_voltage",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Complex Number>"
+                        ],
+                        "label": "Voltage"
+                    },
+                    "X_offset": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_X_offset",
+                        "value": -0.1400000006,
+                        "raw_value": "-0.1400000006",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Numbers -999.99<=v<=999.99>",
+                        "name": "X_offset",
+                        "inter_delay": 0,
+                        "unit": "%",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Numbers -999.99<=v<=999.99>"
+                        ],
+                        "label": "X offset "
+                    },
+                    "Y_offset": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_Y_offset",
+                        "value": 0.0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Numbers -999.99<=v<=999.99>",
+                        "name": "Y_offset",
+                        "inter_delay": 0,
+                        "unit": "%",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Numbers -999.99<=v<=999.99>"
+                        ],
+                        "label": "Y offset"
+                    },
+                    "R_offset": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_R_offset",
+                        "value": 0.0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Numbers -999.99<=v<=999.99>",
+                        "name": "R_offset",
+                        "inter_delay": 0,
+                        "unit": "%",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Numbers -999.99<=v<=999.99>"
+                        ],
+                        "label": "R offset"
+                    },
+                    "X_expand": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_X_expand",
+                        "value": "OFF",
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'X100', 'OFF', 'X10'}>",
+                        "val_mapping": {
+                            "OFF": "0",
+                            "X10": "1",
+                            "X100": "2"
+                        },
+                        "name": "X_expand",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'X100', 'OFF', 'X10'}>"
+                        ],
+                        "label": "X expand multiplier"
+                    },
+                    "Y_expand": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_Y_expand",
+                        "value": "OFF",
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'X100', 'OFF', 'X10'}>",
+                        "val_mapping": {
+                            "OFF": 0,
+                            "X10": 1,
+                            "X100": 2
+                        },
+                        "name": "Y_expand",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'X100', 'OFF', 'X10'}>"
+                        ],
+                        "label": "Y expand multiplier"
+                    },
+                    "R_expand": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_R_expand",
+                        "value": "OFF",
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Enum: {'X100', 'OFF', 'X10'}>",
+                        "val_mapping": {
+                            "OFF": 0,
+                            "X10": 1,
+                            "X100": 2
+                        },
+                        "name": "R_expand",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [
+                            "<Enum: {'X100', 'OFF', 'X10'}>"
+                        ],
+                        "label": "R expand multiplier"
+                    },
+                    "aux_in0": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_aux_in0",
+                        "value": -0.00115442276,
+                        "raw_value": "-0.00115442276",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "aux_in0",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Aux input 0"
+                    },
+                    "aux_out0": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_aux_out0",
+                        "value": 0.0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "aux_out0",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Aux output 0"
+                    },
+                    "aux_in1": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_aux_in1",
+                        "value": -0.0012681484222,
+                        "raw_value": "-0.0012681484222",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "aux_in1",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Aux input 1"
+                    },
+                    "aux_out1": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_aux_out1",
+                        "value": 0.0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "aux_out1",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Aux output 1"
+                    },
+                    "aux_in2": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_aux_in2",
+                        "value": -0.0007917881012,
+                        "raw_value": "-0.0007917881012",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "aux_in2",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Aux input 2"
+                    },
+                    "aux_out2": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_aux_out2",
+                        "value": 0.0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "aux_out2",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Aux output 2"
+                    },
+                    "aux_in3": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_aux_in3",
+                        "value": -0.00082397460938,
+                        "raw_value": "-0.00082397460938",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "aux_in3",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Aux input 3"
+                    },
+                    "aux_out3": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_aux_out3",
+                        "value": 0.0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:57",
+                        "name": "aux_out3",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Aux output 3"
+                    }
+                },
+                "__class__": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                "label": "lockin865",
+                "name": "lockin865",
+                "address": "GPIB0::4::INSTR",
+                "terminator": "\n",
+                "read_terminator": "\n",
+                "write_terminator": "\n",
+                "timeout": 10.0
+            },
+            "srdc": {
+                "functions": {},
+                "submodules": {},
+                "parameters": {
+                    "IDN": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srdc_IDN",
+                        "value": {
+                            "vendor": "Stanford_Research_Systems",
+                            "model": "DC205",
+                            "serial": "s/n20500178",
+                            "firmware": "ver1.80"
+                        },
+                        "raw_value": {
+                            "vendor": "Stanford_Research_Systems",
+                            "model": "DC205",
+                            "serial": "s/n20500178",
+                            "firmware": "ver1.80"
+                        },
+                        "ts": "2026-05-08 15:07:57",
+                        "vals": "<Anything>",
+                        "name": "IDN",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                        "instrument_name": "srdc",
+                        "validators": [
+                            "<Anything>"
+                        ],
+                        "label": "IDN"
+                    },
+                    "volt": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srdc_volt",
+                        "value": -7.103607805380397,
+                        "raw_value": -7.1036078,
+                        "ts": "2026-05-14 01:47:49",
+                        "vals": "<Numbers -100<=v<=100>",
+                        "name": "volt",
+                        "inter_delay": 0.1,
+                        "unit": "",
+                        "post_delay": 0,
+                        "step": 0.1,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                        "instrument_name": "srdc",
+                        "validators": [
+                            "<Numbers -100<=v<=100>"
+                        ],
+                        "label": "volt"
+                    },
+                    "range": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srdc_range",
+                        "value": 2,
+                        "raw_value": "2",
+                        "ts": "2026-05-08 15:07:58",
+                        "vals": "<Ints 0<=v<=2>",
+                        "name": "range",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                        "instrument_name": "srdc",
+                        "validators": [
+                            "<Ints 0<=v<=2>"
+                        ],
+                        "label": "range"
+                    },
+                    "output": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srdc_output",
+                        "value": 1,
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:07:58",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "output",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                        "instrument_name": "srdc",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "output"
+                    },
+                    "isolation": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srdc_isolation",
+                        "value": 0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:58",
+                        "vals": "<Ints 0<=v<=1>",
+                        "name": "isolation",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                        "instrument_name": "srdc",
+                        "validators": [
+                            "<Ints 0<=v<=1>"
+                        ],
+                        "label": "isolation"
+                    }
+                },
+                "__class__": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                "label": "srdc",
+                "name": "srdc"
+            },
+            "srdc_2": {
+                "functions": {},
+                "submodules": {},
+                "parameters": {
+                    "IDN": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srdc_2_IDN",
+                        "value": {
+                            "vendor": "Stanford_Research_Systems",
+                            "model": "DC205",
+                            "serial": "s/n20500044",
+                            "firmware": "ver1.80"
+                        },
+                        "raw_value": {
+                            "vendor": "Stanford_Research_Systems",
+                            "model": "DC205",
+                            "serial": "s/n20500044",
+                            "firmware": "ver1.80"
+                        },
+                        "ts": "2026-05-08 15:07:58",
+                        "vals": "<Anything>",
+                        "name": "IDN",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                        "instrument_name": "srdc_2",
+                        "validators": [
+                            "<Anything>"
+                        ],
+                        "label": "IDN"
+                    },
+                    "volt": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srdc_2_volt",
+                        "value": 3.0698729314353224,
+                        "raw_value": 3.0698729,
+                        "ts": "2026-05-14 01:47:52",
+                        "vals": "<Numbers -100<=v<=100>",
+                        "name": "volt",
+                        "inter_delay": 0.1,
+                        "unit": "",
+                        "post_delay": 0,
+                        "step": 0.1,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                        "instrument_name": "srdc_2",
+                        "validators": [
+                            "<Numbers -100<=v<=100>"
+                        ],
+                        "label": "volt"
+                    },
+                    "range": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srdc_2_range",
+                        "value": 2,
+                        "raw_value": "2",
+                        "ts": "2026-05-08 15:07:58",
+                        "vals": "<Ints 0<=v<=2>",
+                        "name": "range",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                        "instrument_name": "srdc_2",
+                        "validators": [
+                            "<Ints 0<=v<=2>"
+                        ],
+                        "label": "range"
+                    },
+                    "output": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srdc_2_output",
+                        "value": 1,
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:07:58",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "output",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                        "instrument_name": "srdc_2",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "output"
+                    },
+                    "isolation": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srdc_2_isolation",
+                        "value": 0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:07:58",
+                        "vals": "<Ints 0<=v<=1>",
+                        "name": "isolation",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                        "instrument_name": "srdc_2",
+                        "validators": [
+                            "<Ints 0<=v<=1>"
+                        ],
+                        "label": "isolation"
+                    }
+                },
+                "__class__": "qcodes.instrument_drivers.nplab_drivers.SRDC205.SRDC205",
+                "label": "srdc_2",
+                "name": "srdc_2"
+            },
+            "srframe": {
+                "functions": {},
+                "submodules": {},
+                "parameters": {
+                    "IDN": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_IDN",
+                        "value": {
+                            "vendor": "Stanford_Research_Systems",
+                            "model": "SIM900",
+                            "serial": "s/n152150",
+                            "firmware": "ver3.6"
+                        },
+                        "raw_value": {
+                            "vendor": "Stanford_Research_Systems",
+                            "model": "SIM900",
+                            "serial": "s/n152150",
+                            "firmware": "ver3.6"
+                        },
+                        "ts": "2026-05-08 15:07:58",
+                        "vals": "<Anything>",
+                        "name": "IDN",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Anything>"
+                        ],
+                        "label": "IDN"
+                    },
+                    "timeout": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_timeout",
+                        "value": 10.0,
+                        "raw_value": 10.0,
+                        "ts": "2026-05-13 11:44:14",
+                        "vals": "<MultiType: Numbers v>=0, Enum: {None}>",
+                        "name": "timeout",
+                        "inter_delay": 0,
+                        "unit": "s",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<MultiType: Numbers v>=0, Enum: {None}>"
+                        ],
+                        "label": "timeout"
+                    },
+                    "volt_p1": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_volt_p1",
+                        "value": null,
+                        "raw_value": null,
+                        "ts": null,
+                        "vals": "<Numbers -20<=v<=20>",
+                        "name": "volt_p1",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Numbers -20<=v<=20>"
+                        ],
+                        "label": "Port 1 Voltage"
+                    },
+                    "volt_p3": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_volt_p3",
+                        "value": null,
+                        "raw_value": null,
+                        "ts": null,
+                        "vals": "<Numbers -20<=v<=20>",
+                        "name": "volt_p3",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Numbers -20<=v<=20>"
+                        ],
+                        "label": "Port 3 Voltage"
+                    },
+                    "volt_p5": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_volt_p5",
+                        "value": 0.0,
+                        "raw_value": "0.000",
+                        "ts": "2026-05-08 15:07:58",
+                        "vals": "<Numbers -20<=v<=20>",
+                        "name": "volt_p5",
+                        "inter_delay": 0.1,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "step": 0.1,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Numbers -20<=v<=20>"
+                        ],
+                        "label": "Port 5 Voltage"
+                    },
+                    "volt_p7": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_volt_p7",
+                        "value": null,
+                        "raw_value": null,
+                        "ts": null,
+                        "vals": "<Numbers -20<=v<=20>",
+                        "name": "volt_p7",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Numbers -20<=v<=20>"
+                        ],
+                        "label": "Port 7 Voltage"
+                    },
+                    "output_p1": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_output_p1",
+                        "value": null,
+                        "raw_value": null,
+                        "ts": null,
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "output_p1",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "output_p1"
+                    },
+                    "output_p3": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_output_p3",
+                        "value": null,
+                        "raw_value": null,
+                        "ts": null,
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "output_p3",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "output_p3"
+                    },
+                    "output_p5": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_output_p5",
+                        "value": 1,
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:07:59",
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "output_p5",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "output_p5"
+                    },
+                    "output_p7": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_output_p7",
+                        "value": null,
+                        "raw_value": null,
+                        "ts": null,
+                        "vals": "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>",
+                        "name": "output_p7",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'ON', 'OFF', 'on'}>"
+                        ],
+                        "label": "output_p7"
+                    },
+                    "sum_chan1": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_sum_chan1",
+                        "value": 1,
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:08:00",
+                        "vals": "<Enum: {0, 1, 'off', 'INVERT', 'invert', 'OFF', -1}>",
+                        "name": "sum_chan1",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'INVERT', 'invert', 'OFF', -1}>"
+                        ],
+                        "label": "sum_chan1"
+                    },
+                    "sum_chan2": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_sum_chan2",
+                        "value": 1,
+                        "raw_value": "1",
+                        "ts": "2026-05-08 15:08:00",
+                        "vals": "<Enum: {0, 1, 'off', 'INVERT', 'invert', 'OFF', -1}>",
+                        "name": "sum_chan2",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'INVERT', 'invert', 'OFF', -1}>"
+                        ],
+                        "label": "sum_chan2"
+                    },
+                    "sum_chan3": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_sum_chan3",
+                        "value": 0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:08:00",
+                        "vals": "<Enum: {0, 1, 'off', 'INVERT', 'invert', 'OFF', -1}>",
+                        "name": "sum_chan3",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'INVERT', 'invert', 'OFF', -1}>"
+                        ],
+                        "label": "sum_chan3"
+                    },
+                    "sum_chan4": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_sum_chan4",
+                        "value": 0,
+                        "raw_value": "0",
+                        "ts": "2026-05-08 15:08:00",
+                        "vals": "<Enum: {0, 1, 'off', 'INVERT', 'invert', 'OFF', -1}>",
+                        "name": "sum_chan4",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [
+                            "<Enum: {0, 1, 'off', 'INVERT', 'invert', 'OFF', -1}>"
+                        ],
+                        "label": "sum_chan4"
+                    },
+                    "sum_read": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "srframe_sum_read",
+                        "value": -23.0,
+                        "raw_value": "-23",
+                        "ts": "2026-05-08 15:08:02",
+                        "name": "sum_read",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                        "instrument_name": "srframe",
+                        "validators": [],
+                        "label": "sum_read"
+                    }
+                },
+                "__class__": "qcodes.instrument_drivers.nplab_drivers.SIM900.SIM900",
+                "label": "srframe",
+                "name": "srframe",
+                "address": "GPIB0::2::INSTR",
+                "terminator": "\n",
+                "read_terminator": "\n",
+                "write_terminator": "\n",
+                "timeout": 10.0
+            }
+        },
+        "parameters": {},
+        "components": {},
+        "config": null
+    },
+    "loop": {
+        "__class__": "qcodes_loop.loops.ActiveLoop",
+        "sweep_values": {
+            "parameter": {
+                "__class__": "qcodes.parameters.parameter.Parameter",
+                "full_name": "triton_sweep_Bz",
+                "value": 3,
+                "raw_value": 3,
+                "ts": "2026-05-14 00:56:03",
+                "name": "sweep_Bz",
+                "inter_delay": 0,
+                "unit": "T",
+                "post_delay": 0,
+                "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+                "instrument_name": "triton",
+                "validators": [],
+                "label": "Magnetic field z-component"
+            },
+            "values": [
+                {
+                    "min": 0.02,
+                    "max": 3.0,
+                    "first": 3.0,
+                    "last": 0.02,
+                    "num": 301,
+                    "type": "sequence"
+                }
+            ]
+        },
+        "delay": 3,
+        "actions": [
+            {
+                "__class__": "qcodes_loop.loops.ActiveLoop",
+                "sweep_values": {
+                    "parameter": {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "CRPS404_fixD_nswparam",
+                        "value": -8,
+                        "raw_value": -8,
+                        "ts": "2026-05-14 01:47:52",
+                        "vals": "<Numbers -15<=v<=15>",
+                        "name": "CRPS404_fixD_nswparam",
+                        "inter_delay": 0,
+                        "unit": "",
+                        "post_delay": 0,
+                        "validators": [
+                            "<Numbers -15<=v<=15>"
+                        ],
+                        "label": "CRPS404_fixD_nswparam"
+                    },
+                    "values": [
+                        {
+                            "min": -8.0,
+                            "max": 0.0,
+                            "first": -8.0,
+                            "last": 0.0,
+                            "num": 201,
+                            "type": "sequence"
+                        }
+                    ]
+                },
+                "delay": 0.30000000000000004,
+                "actions": [
+                    {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_X",
+                        "value": 1.5275880969e-06,
+                        "raw_value": "1.5275880969e-06",
+                        "ts": "2026-05-13 23:10:55",
+                        "name": "X",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "In-phase Magnitude"
+                    },
+                    {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin865_Y",
+                        "value": -2.5986134915e-06,
+                        "raw_value": "-2.5986134915e-06",
+                        "ts": "2026-05-13 23:10:55",
+                        "name": "Y",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+                        "instrument_name": "lockin865",
+                        "validators": [],
+                        "label": "Out-phase Magnitude"
+                    },
+                    {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin830_X",
+                        "value": 0.000720982,
+                        "raw_value": "0.000720982\n",
+                        "ts": "2026-05-13 23:10:55",
+                        "name": "X",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR830.SR830",
+                        "instrument_name": "lockin830",
+                        "validators": [],
+                        "label": "X"
+                    },
+                    {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "lockin830_Y",
+                        "value": 0.00276949,
+                        "raw_value": "0.00276949\n",
+                        "ts": "2026-05-13 23:10:55",
+                        "name": "Y",
+                        "inter_delay": 0,
+                        "unit": "V",
+                        "post_delay": 0,
+                        "instrument": "qcodes.instrument_drivers.stanford_research.SR830.SR830",
+                        "instrument_name": "lockin830",
+                        "validators": [],
+                        "label": "Y"
+                    },
+                    {
+                        "__class__": "qcodes.parameters.parameter.Parameter",
+                        "full_name": "MC",
+                        "value": 848.053,
+                        "raw_value": 848.053,
+                        "ts": "2026-05-13 23:10:55",
+                        "name": "MC",
+                        "inter_delay": 0,
+                        "unit": "mK",
+                        "post_delay": 0,
+                        "validators": [],
+                        "label": "MC"
+                    }
+                ],
+                "then_actions": []
+            },
+            {
+                "type": "Task",
+                "func": "<function twod_param_sweep.<locals>.between_func at 0x00000225EA2FDBC0>"
+            }
+        ],
+        "then_actions": [],
+        "ts_start": "2026-05-14 01:48:04",
+        "use_threads": false,
+        "ts_end": "2026-05-14 10:55:32"
+    },
+    "__class__": "qcodes_loop.data.data_set.DataSet",
+    "location": "data/2026-05-14/#001_CRPS404_865_Rxy_I_5.0nA_T_848mK_D_400mV_oscillations_01-48-02",
+    "arrays": {
+        "triton_sweep_Bz_set": {
+            "__class__": "qcodes_loop.data.data_array.DataArray",
+            "full_name": "triton_sweep_Bz",
+            "raw_value": 3,
+            "name": "sweep_Bz",
+            "inter_delay": 0,
+            "unit": "T",
+            "post_delay": 0,
+            "instrument": "qcodes.instrument_drivers.nplab_drivers.NPTriton.Triton",
+            "instrument_name": "triton",
+            "validators": [],
+            "label": "Magnetic field z-component",
+            "array_id": "triton_sweep_Bz_set",
+            "shape": [
+                301
+            ],
+            "action_indices": [],
+            "is_setpoint": true
+        },
+        "CRPS404_fixD_nswparam_set": {
+            "__class__": "qcodes_loop.data.data_array.DataArray",
+            "full_name": "CRPS404_fixD_nswparam",
+            "raw_value": -8,
+            "vals": "<Numbers -15<=v<=15>",
+            "name": "CRPS404_fixD_nswparam",
+            "inter_delay": 0,
+            "unit": "",
+            "post_delay": 0,
+            "validators": [
+                "<Numbers -15<=v<=15>"
+            ],
+            "label": "CRPS404_fixD_nswparam",
+            "array_id": "CRPS404_fixD_nswparam_set",
+            "shape": [
+                301,
+                201
+            ],
+            "action_indices": [
+                0
+            ],
+            "is_setpoint": true
+        },
+        "lockin865_X": {
+            "__class__": "qcodes_loop.data.data_array.DataArray",
+            "full_name": "lockin865_X",
+            "raw_value": "1.5275880969e-06",
+            "name": "X",
+            "inter_delay": 0,
+            "unit": "V",
+            "post_delay": 0,
+            "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+            "instrument_name": "lockin865",
+            "validators": [],
+            "label": "In-phase Magnitude",
+            "array_id": "lockin865_X",
+            "shape": [
+                301,
+                201
+            ],
+            "action_indices": [
+                0,
+                0
+            ],
+            "is_setpoint": false
+        },
+        "lockin865_Y": {
+            "__class__": "qcodes_loop.data.data_array.DataArray",
+            "full_name": "lockin865_Y",
+            "raw_value": "-2.5986134915e-06",
+            "name": "Y",
+            "inter_delay": 0,
+            "unit": "V",
+            "post_delay": 0,
+            "instrument": "qcodes.instrument_drivers.stanford_research.SR865A.SR865A",
+            "instrument_name": "lockin865",
+            "validators": [],
+            "label": "Out-phase Magnitude",
+            "array_id": "lockin865_Y",
+            "shape": [
+                301,
+                201
+            ],
+            "action_indices": [
+                0,
+                1
+            ],
+            "is_setpoint": false
+        },
+        "lockin830_X": {
+            "__class__": "qcodes_loop.data.data_array.DataArray",
+            "full_name": "lockin830_X",
+            "raw_value": "0.000720982\n",
+            "name": "X",
+            "inter_delay": 0,
+            "unit": "V",
+            "post_delay": 0,
+            "instrument": "qcodes.instrument_drivers.stanford_research.SR830.SR830",
+            "instrument_name": "lockin830",
+            "validators": [],
+            "label": "X",
+            "array_id": "lockin830_X",
+            "shape": [
+                301,
+                201
+            ],
+            "action_indices": [
+                0,
+                2
+            ],
+            "is_setpoint": false
+        },
+        "lockin830_Y": {
+            "__class__": "qcodes_loop.data.data_array.DataArray",
+            "full_name": "lockin830_Y",
+            "raw_value": "0.00276949\n",
+            "name": "Y",
+            "inter_delay": 0,
+            "unit": "V",
+            "post_delay": 0,
+            "instrument": "qcodes.instrument_drivers.stanford_research.SR830.SR830",
+            "instrument_name": "lockin830",
+            "validators": [],
+            "label": "Y",
+            "array_id": "lockin830_Y",
+            "shape": [
+                301,
+                201
+            ],
+            "action_indices": [
+                0,
+                3
+            ],
+            "is_setpoint": false
+        },
+        "MC": {
+            "__class__": "qcodes_loop.data.data_array.DataArray",
+            "full_name": "MC",
+            "raw_value": 848.053,
+            "name": "MC",
+            "inter_delay": 0,
+            "unit": "mK",
+            "post_delay": 0,
+            "validators": [],
+            "label": "MC",
+            "array_id": "MC",
+            "shape": [
+                301,
+                201
+            ],
+            "action_indices": [
+                0,
+                4
+            ],
+            "is_setpoint": false
+        }
+    },
+    "formatter": "qcodes_loop.data.gnuplot_format.GNUPlotFormat",
+    "io": "<DiskIO, base_location='C:\\\\Users\\\\nplab\\\\Data'>"
+}
